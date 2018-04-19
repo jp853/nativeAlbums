@@ -1,14 +1,15 @@
 /*jshint esversion: 6 */
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
+import Card from './Card';
 
 //functional component
 const AlbumDetail = (props) => {
   return (
-    <View>
+    <Card>
       <Text>{props.album.title}</Text>
-    </View>
-  )
+    </Card>
+  );
 };
 
 export default AlbumDetail;
